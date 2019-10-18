@@ -1,0 +1,17 @@
+Versioning:
+     Major.Minor.Fix-Build
+
+ Legend:
+==================
+    + Add
+    - Remove
+    ! Fix
+    * Change
+    ^ Update
+==================
+
+AHKGTAV V1
+Date: 20191018 12:02
+    Changes:
+
+    + Initial creation of the script and log file.
