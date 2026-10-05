@@ -4,7 +4,7 @@ Short outline for agents. This repo has no CONTRIBUTING.md yet; the fleet proces
 
 ## What this repo is for
 
-Dread's AutoHotkey v1 script for Green Leaf RP, a GTA V roleplay server. Public. Not made by or for the server's staff. Tier is not set yet: ask Dread before any merge.
+Dread's AutoHotkey v1 script for Green Leaf RP, a GTA V roleplay server. Public. Not made by or for the server's staff. TEST repo: Rig merges after a separate grader PASS plus local proof.
 
 ## What is allowed in this repo
 
@@ -24,7 +24,7 @@ No check scripts on `master` yet. For a docs-only change: confirm `AGENTS.md` st
 
 ## Grader and merge
 
-Grader starts at FAIL. The person who wrote the change does not grade it. ASK (ahkglrp) = Dread sets tier. Until then, no bot merges this repo.
+Grader starts at FAIL. The person who wrote the change does not grade it. This is a TEST repo: after a separate grader PASS plus local proof, the owner seat merges (do not wait on hosted Actions when minutes are exhausted).
 
 ## Correction loop
 
@@ -32,7 +32,7 @@ No correction-loop doc yet — follow CONTRIBUTING if present.
 
 ## Landmines
 
-- Never merge without Dread setting the tier → ASK gate (no bot merge)
+- Never merge your own PR → grader ≠ doer; TEST owner merges after PASS
 - Never add secrets, tokens or personal machine paths as defaults → reviewers
 - Never add code comments in added lines → reviewers (no no_new_comments CI yet)
 - Never skip the Required AGENTS.md headings → reviewers (no headings CI yet)
@@ -40,5 +40,5 @@ No correction-loop doc yet — follow CONTRIBUTING if present.
 ## Pointers
 
 - Usage and environment: [README.md](README.md)
-- Process: none in this repo yet; ask Dread
+- Process: TEST merge after grader PASS (no CONTRIBUTING.md yet)
 - CI checks: none on `master` yet (headings CI skipped — no Python check harness)
