@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Short outline for agents. This repo has no CONTRIBUTING.md yet; the fleet process applies.
+Short outline for agents. Process detail lives in CONTRIBUTING.md.
 
 ## What this repo is for
 
@@ -13,14 +13,14 @@ Dread's AutoHotkey v1 script for Green Leaf RP, a GTA V roleplay server. Public.
 
 ## What is NOT allowed
 
-- Secrets, tokens, or personal machine paths added as defaults.
+- Passwords or secrets in git (cleartext or otherwise documented in-repo); use env vars or a secret store.
 - Code comments in added lines.
 - Images outside a password-protected archive.
 - Pushing to `master`, force-pushing, or merging without Dread's say-so.
 
 ## Prove a change
 
-No check scripts on `master` yet. For a docs-only change: confirm `AGENTS.md` still has every Required H2 (What this repo is for, What is allowed in this repo, What is NOT allowed, Prove a change, Pointers) and that README.md still matches usage. For script changes: load `AHKGLRP.ahk` in AutoHotkey v1 on a Windows box and smoke the hotkeys you touched.
+Run `python3 tools/checks/no_secrets.py` from the repo root (must print OK). For a docs-only change: confirm `AGENTS.md` still has every Required H2 (What this repo is for, What is allowed in this repo, What is NOT allowed, Prove a change, Pointers) and that README.md still matches usage. For script changes: load `AHKGLRP.ahk` in AutoHotkey v1 on a Windows box and smoke the hotkeys you touched.
 
 ## Grader and merge
 
@@ -28,17 +28,17 @@ Grader starts at FAIL. The person who wrote the change does not grade it. This i
 
 ## Correction loop
 
-No correction-loop doc yet — follow CONTRIBUTING if present.
+No correction-loop doc yet — follow CONTRIBUTING.md.
 
 ## Landmines
 
+- Never commit passwords/secrets, tokens, or personal machine paths as defaults → `tools/checks/no_secrets.py` / `no-secrets.yml`
 - Never merge your own PR → grader ≠ doer; TEST owner merges after PASS
-- Never add secrets, tokens or personal machine paths as defaults → reviewers
 - Never add code comments in added lines → reviewers (no no_new_comments CI yet)
 - Never skip the Required AGENTS.md headings → reviewers (no headings CI yet)
 
 ## Pointers
 
 - Usage and environment: [README.md](README.md)
-- Process: TEST merge after grader PASS (no CONTRIBUTING.md yet)
-- CI checks: none on `master` yet (headings CI skipped — no Python check harness)
+- Process: [CONTRIBUTING.md](CONTRIBUTING.md)
+- CI checks in `.github/workflows/`: `no-secrets.yml` (`tools/checks/no_secrets.py`)
