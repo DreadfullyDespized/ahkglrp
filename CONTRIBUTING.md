@@ -1,6 +1,6 @@
 # Contributing to ahkglrp
 
-**Repo label: TEST** — All branches = TEST; the owner seat merges when the process below is complete. Verified work merges to master, and Dread tests master. Source of truth: fleet skill "Repo registry (PROD vs TEST)".
+**Repo label: TEST**, as set by the first line of [README.md](README.md) — All branches = TEST; the owner seat merges when the process below is complete. Verified work merges to master, and Dread tests master.
 **Owner seat:** Rig (Stream Tools).
 **Tracking:** GitHub issues.
 
