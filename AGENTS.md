@@ -4,7 +4,7 @@ Short outline for agents. Process detail lives in CONTRIBUTING.md.
 
 ## What this repo is for
 
-Dread's AutoHotkey v1 script for Green Leaf RP, a GTA V roleplay server. Public. Not made by or for the server's staff. TEST repo: Rig merges after a separate grader PASS plus local proof.
+Dread's AutoHotkey v1 script for Green Leaf RP, a GTA V roleplay server. Public. Not made by or for the server's staff. TEST repo, as set by the `Repo label: TEST` first line of [README.md](README.md): Rig merges after a separate grader PASS plus local proof.
 
 ## What is allowed in this repo
 
